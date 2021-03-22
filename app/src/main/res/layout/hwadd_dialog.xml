@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_selector">
+
+        <Button
+            android:id="@+id/hwadd_back_btn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginTop="@dimen/button_margin"
+            android:background="@drawable/back"/>
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:background="@drawable/save"
+             />
+
+
+        <RadioGroup
+            android:layout_below="@+id/hwadd_back_btn"
+            android:id="@+id/hwadd_check_radiogrup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="체크형" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="시크바 형" />
+        </RadioGroup>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/hwadd_check_radiogrup"
+            android:visibility="invisible"/>
+
+        <com.xw.repo.BubbleSeekBar
+            android:id="@+id/hwadd_seekbar"
+            android:layout_below="@+id/hwadd_check_radiogrup"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            />
+
+        <TextView
+            android:id="@+id/hwadd_max_text"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_below="@+id/hwadd_seekbar"
+            android:text="Max"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/hwadd_max_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hwadd_max_text"
+            android:hint="120"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/hwadd_section_text"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_below="@+id/hwadd_max_edit"
+            android:text="간격"
+            android:visibility="visible"/>
+
+        <EditText
+            android:id="@+id/hwadd_section_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hwadd_section_text"
+            android:hint="5"
+            android:visibility="visible"/>
+
+
+    </RelativeLayout>
+</layout>

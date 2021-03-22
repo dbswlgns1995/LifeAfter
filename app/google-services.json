@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "300032301276",
+    "project_id": "hwlife-cbb71",
+    "storage_bucket": "hwlife-cbb71.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:300032301276:android:59e47660b40c0de105fc19",
+        "android_client_info": {
+          "package_name": "com.example.hwlife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "300032301276-hibgjql3v0vn2f333q1cdrler14osmc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCU_PDEv-uqreA4bk6hqPTfIrm0j3u_n7I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "300032301276-hibgjql3v0vn2f333q1cdrler14osmc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

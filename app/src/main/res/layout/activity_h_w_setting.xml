@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="vm"
+            type="com.example.hwlife.viewmodel.HWSettingViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activity.HWSettingActivity">
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="@dimen/button_margin"
+            android:layout_marginTop="@dimen/button_margin"
+            android:background="@drawable/back"
+            android:onClick="@{()->vm.back()}"/>
+
+        <Button
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/button_margin"
+            android:layout_marginRight="@dimen/button_margin"
+            android:background="@drawable/add"
+            android:onClick="@{()->vm.addHw()}"/>
+
+
+    </RelativeLayout>
+</layout>

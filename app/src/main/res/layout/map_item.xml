@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="vm"
+            type="com.example.hwlife.model.Map" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_selector"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:text="@{vm.map}"
+            android:id="@+id/mapitem_text"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_selector"/>
+
+        <ImageView
+            android:id="@+id/mapitem_iamgeview"
+            android:layout_below="@id/mapitem_text"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"/>
+
+
+    </RelativeLayout>
+
+</layout>
