@@ -8,28 +8,41 @@
             type="com.example.hwlife.model.Map" />
     </data>
 
-    <RelativeLayout
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_selector"
-        android:layout_margin="10dp">
+        app:cardElevation="6dp"
+        app:cardCornerRadius="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
 
-        <TextView
-            android:text="@{vm.map}"
-            android:id="@+id/mapitem_text"
-            android:textSize="16dp"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/button_selector"/>
+            android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/mapitem_iamgeview"
-            android:layout_below="@id/mapitem_text"
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_margin="10dp"/>
+            <TextView
+                android:id="@+id/mapitem_text"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"/>
+
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/mapitem_iamgeview"
+                android:layout_below="@id/mapitem_text"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_margin="10dp"/>
 
 
-    </RelativeLayout>
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
 
 </layout>

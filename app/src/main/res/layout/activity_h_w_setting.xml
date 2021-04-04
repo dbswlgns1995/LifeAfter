@@ -7,15 +7,28 @@
     <data>
         <variable
             name="vm"
-            type="com.example.hwlife.viewmodel.HWSettingViewModel" />
+            type="com.example.hwlife.ui.viewmodel.HWSettingViewModel" />
     </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activity.HWSettingActivity">
+        tools:context=".ui.activity.HWSettingActivity">
 
-        <Button
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:text="숙제 설정"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:backgroundTint="@color/black"
+            android:id="@+id/hwsetting_back_btn"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginLeft="@dimen/button_margin"
@@ -23,14 +36,23 @@
             android:background="@drawable/back"
             android:onClick="@{()->vm.back()}"/>
 
-        <Button
+        <ImageView
+            android:id="@+id/hwsetting_plus_btn"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="@dimen/button_margin"
             android:layout_marginRight="@dimen/button_margin"
             android:background="@drawable/add"
-            android:onClick="@{()->vm.addHw()}"/>
+            android:onClick="@{()->vm.addHw()}"
+            android:backgroundTint="@color/black"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/hwsetting_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/hwsetting_back_btn"
+            android:layout_marginTop="20dp"/>
 
 
     </RelativeLayout>

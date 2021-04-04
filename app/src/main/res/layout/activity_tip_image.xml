@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<data>
+    <variable
+        name="vm"
+        type="com.example.hwlife.ui.viewmodel.TipImageViewModel" />
+</data>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.TipImageActivity">
+
+    <ImageView
+        android:backgroundTint="@color/black"
+        android:id="@+id/tipimage_back_btn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/back"
+        android:onClick="@{()->vm.back()}"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tipimage_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tipimage_back_btn"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>
+
+</layout>
+

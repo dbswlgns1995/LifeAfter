@@ -1,26 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <data>
         <variable
             name="vm"
             type="com.example.hwlife.model.Level" />
     </data>
 
-    <RelativeLayout
-        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/button_selector"
-        android:layout_margin="10dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        >
 
-        <TextView
-            android:id="@+id/levelitem_lv_text"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="16dp"
-            android:text="@{vm.textname}"/>
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/levelitem_lv_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@{vm.textname}"
+                android:textSize="18dp"
+                android:textColor="@color/black"/>
+
+        </RelativeLayout>
 
 
-    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
 
 </layout>
 

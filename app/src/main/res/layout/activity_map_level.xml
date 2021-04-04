@@ -3,7 +3,7 @@
     <data>
         <variable
             name="vm"
-            type="com.example.hwlife.viewmodel.MapLevelViewModel" />
+            type="com.example.hwlife.ui.viewmodel.MapLevelViewModel" />
     </data>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -11,9 +11,10 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activity.SettingActivity">
+        tools:context=".ui.activity.SettingActivity">
 
-        <Button
+        <ImageView
+            android:backgroundTint="@color/black"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginLeft="20dp"
@@ -23,11 +24,12 @@
 
         <TextView
             android:id="@+id/maplevel_title_text"
-            android:layout_width="wrap_content"
+            android:layout_width="160dp"
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:textStyle="bold"
             android:text="@{vm.title}"
+            android:gravity="center"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
             android:textColor="@color/black"/>

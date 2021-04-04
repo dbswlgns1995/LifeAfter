@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">HwLife</string>
+    <string name="app_name">HWLife</string>
 
     <string name="menu1">숙제</string>
     <string name="menu2">숙제 설정</string>
@@ -9,21 +9,13 @@
     <string name="menu6">팁 요청</string>
     <string name="menu7">공시 알라미</string>
     <string name="menu8">설정</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
 
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
 
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="alarm_noti_title">공시 알람 종료</string>
+    <string name="alarm_noti_content">라이프애프터에 접속해 아이템을 구매하세요!</string>
+    <string name="sharedpref_string1">text</string>
+
+    <string name="main_title">Homework Life</string>
+    <string name="main_content">숙제는 쉬엄쉬엄!</string>
 
 </resources>

@@ -13,9 +13,21 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activity.HWActivity">
+        tools:context=".ui.activity.HWActivity">
 
-        <Button
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:text="일일 숙제"
+            android:textColor="@color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:backgroundTint="@color/black"
             android:id="@+id/hw_back_btn"
             android:layout_width="24dp"
             android:layout_height="24dp"
@@ -25,6 +37,7 @@
             android:onClick="@{()->vm.back()}"/>
 
         <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="20dp"
             android:id="@+id/hw_recyclerview"
             android:layout_below="@+id/hw_back_btn"
             android:layout_width="match_parent"

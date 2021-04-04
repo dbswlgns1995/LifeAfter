@@ -4,7 +4,7 @@
     <data>
         <variable
             name="vm"
-            type="com.example.hwlife.viewmodel.TipViewModel" />
+            type="com.example.hwlife.ui.viewmodel.TipViewModel" />
     </data>
 
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -12,9 +12,29 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activity.TipActivity">
+        tools:context=".ui.activity.TipActivity"
+        android:background="@drawable/setting_background">
 
-        <Button
+        <ProgressBar
+            android:id="@+id/tip_progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="20dp"
+            android:text="팁 게시판"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp"
+            android:gravity="center"/>
+
+        <ImageView
+            android:backgroundTint="@color/white"
             android:id="@+id/tip_back_btn"
             android:layout_width="24dp"
             android:layout_height="24dp"
@@ -25,6 +45,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/tip_recyclerview"
+            android:layout_marginTop="20dp"
             android:layout_below="@+id/tip_back_btn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>

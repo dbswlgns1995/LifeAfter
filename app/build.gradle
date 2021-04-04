@@ -53,6 +53,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
+
     //firebase
     implementation platform('com.google.firebase:firebase-bom:26.5.0')
     implementation 'com.google.firebase:firebase-storage-ktx'
@@ -70,13 +71,13 @@ dependencies {
     //picasso
     implementation 'com.squareup.picasso:picasso:2.71828'
 
-
-    // seekbar library
-    implementation 'com.xw.repo:bubbleseekbar:3.20'
-
+    // lottie
+    implementation 'com.airbnb.android:lottie:3.6.0'
 
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
     // LiveData
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0"
+
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
 }
