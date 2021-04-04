@@ -16,18 +16,11 @@ object BindingAdapters {
     fun loadImage(view: ImageView, url: String, error : Drawable) {
         Picasso.get().load(url).error(error).into(view)
     }*/
-
     @BindingAdapter("imageUri")
     fun loadImage(view : ImageView, uri: Uri?){
         Glide.with(view.context)
             .load(uri)
             .into(view)
     }
-/*
-    @BindingAdapter("setMargin")
-    fun setMargin(view : View){
-
-    }
-*/
 
 }
